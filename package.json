@@ -1,0 +1,31 @@
+{
+  "name": "randolorian-brettroidvania",
+  "version": "1.0.0",
+  "description": "A randomized brettroidvania",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "lint": "eslint . --ext .ts",
+    "clean": "rm -rf node_modules .parcel-cache dist"
+  },
+  "author": "Brandon Barrett",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/validator-eslint": "^2.3.2",
+    "@types/lodash": "^4.14.178",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "parcel": "latest",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "kaboom": "^2000.2.9",
+    "lodash": "^4.17.21"
+  },
+  "alias": {
+    "kaboom": "./node_modules/kaboom/dist/kaboom.mjs"
+  }
+}
